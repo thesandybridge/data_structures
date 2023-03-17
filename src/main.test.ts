@@ -1,9 +1,5 @@
-import { greet } from './main'
+import { linkedList } from './linked_list/main'
 
-test('the data is peanut butter', () => {
-  expect(1).toBe(1)
-});
-
-test('greeting', () => {
-  expect(greet('Foo')).toBe('Hello Foo')
+test('Linked List', () => {
+  expect(linkedList()).toBe('Linked List')
 });
