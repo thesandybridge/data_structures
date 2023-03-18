@@ -100,6 +100,25 @@ export default class DoublyLinkedList<T> {
         return this.getAt(idx)?.value;
     }
 
+    print_list(): string | undefined {
+        if (!this.head) {
+            return;
+        }
+
+        let node = this.head as Node<T> | undefined;
+        let str = "";
+
+        while (node) {
+            if (node === this.tail || this.length === 1) {
+                str += node.value;
+            } else {
+                str += node.value + "<->";
+            }
+            node = node.next;
+        }
+        return str;
+    }
+
     private getAt(idx: number): Node<T> | undefined {
         let curr = this.head;
         for (let i = 0; curr && i < idx; ++i) {
