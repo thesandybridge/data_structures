@@ -1,7 +1,3 @@
-export const linkedList = () => {
-    console.log("Linked List");
-};
-
 type Node<T> = {
     value: T,
     prev?: Node<T>,
