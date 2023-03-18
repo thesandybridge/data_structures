@@ -17,6 +17,7 @@ declare interface List<T> {
     prepend(item: T): void;
     append(item: T): void;
     insertAt(item: T, idx: number): void;
+    print_list(): string | undefined;
 }
 
 declare type CompleteGraphEdge = { from: number; to: number; weight: number };

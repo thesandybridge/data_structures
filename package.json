@@ -1,9 +1,9 @@
 {
-  "name": "typescript-boilerplate-2021",
+  "name": "data_structures",
   "version": "0.4.2",
-  "description": "Boilerplate for TypeScript projects (Node.js and browser modules)",
-  "author": "Chris Hager <chris@linuxuser.at>",
-  "repository": "https://github.com/metachris/typescript-boilerplate",
+  "description": "",
+  "author": "Matt Miller",
+  "repository": "https://github.com/thesandybridge/data_structures",
   "license": "MIT",
   "keywords": [
     "typescript",
@@ -17,7 +17,7 @@
     "my-cli-tool": "./dist/esbuild/cli.js"
   },
   "scripts": {
-    "run": "ts-node src/main.ts",
+    "main": "ts-node src/main.ts",
     "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "test": "jest",
     "clean": "rm -rf dist build package",

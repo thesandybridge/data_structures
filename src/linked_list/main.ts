@@ -110,9 +110,9 @@ export default class DoublyLinkedList<T> {
 
         while (node) {
             if (node === this.tail || this.length === 1) {
-                str += node.value;
+                str += `(${node.value})`;
             } else {
-                str += node.value + "<->";
+                str += `(${node.value}) <-> `;
             }
             node = node.next;
         }
